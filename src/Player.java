@@ -45,26 +45,26 @@ public class Player extends This{
 
     public void getPlayerImages(){
         try{
-            idle1 = ImageIO.read(getClass().getResourceAsStream("/guy/idles0001.png"));
-            idle2 = ImageIO.read(getClass().getResourceAsStream("/guy/idles0002.png"));
+            idle1 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/idles0001.png"));
+            idle2 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/idles0002.png"));
             all[0][0] = idle1;
             all[0][1] = idle1;
             all[0][2] = idle2;
             all[0][3] = idle2;
 
-            run1 = ImageIO.read(getClass().getResourceAsStream("/guy/runs0001.png"));
-            run2 = ImageIO.read(getClass().getResourceAsStream("/guy/runs0002.png"));
-            run3 = ImageIO.read(getClass().getResourceAsStream("/guy/runs0003.png"));
-            run4 = ImageIO.read(getClass().getResourceAsStream("/guy/runs0004.png"));
+            run1 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/runs0001.png"));
+            run2 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/runs0002.png"));
+            run3 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/runs0003.png"));
+            run4 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/runs0004.png"));
             all[1][0] = run1;
             all[1][1] = run2;
             all[1][2] = run3;
             all[1][3] = run4;
 
-            punchA1 = ImageIO.read(getClass().getResourceAsStream("/guy/punchAs0001.png"));
-            punchA2 = ImageIO.read(getClass().getResourceAsStream("/guy/punchAs0002.png"));
-            punchA3 = ImageIO.read(getClass().getResourceAsStream("/guy/punchAs0003.png"));
-            punchA4 = ImageIO.read(getClass().getResourceAsStream("/guy/punchAs0004.png"));
+            punchA1 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/punchAs0001.png"));
+            punchA2 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/punchAs0002.png"));
+            punchA3 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/punchAs0003.png"));
+            punchA4 = ImageIO.read(getClass().getResourceAsStream("/guy0.guy/punchAs0004.png"));
             all[2][2] = punchA1;
             all[2][3] = punchA2;
             all[2][0] = punchA3;
