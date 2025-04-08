@@ -16,6 +16,7 @@ public class Player extends This{
     public BufferedImage[] run;
     public BufferedImage[] punchA;
     public BufferedImage[][] all;
+    public Mechanism hit;
 
     public Player(int x, int y, int speed, GamePanel gamePanel, KeyHandler keyHandler,int width){
         this.x = x;
@@ -41,6 +42,7 @@ public class Player extends This{
             }
         }
         getPlayerImages();
+        hit = new Mechanism();
     }
 
     public void getPlayerImages(){
@@ -150,6 +152,9 @@ public class Player extends This{
                 for (int i = 1; i <= 4; i++) {
                     if (spriteIdx == i){
                         image = all[2][i - 1];
+                    }
+                    if (spriteIdx == 1 && x >= width){
+                        hit.add();
                     }
                 }
                 break;

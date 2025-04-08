@@ -1,19 +1,12 @@
 import javax.swing.*;
+import java.util.*;
 public class Main {
     public static void main(String [] args) {
-        JFrame w = new JFrame();
-        w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        w.setResizable(false);
-        w.setTitle("Escape: Level Zero (Kind of Unfinished");
-
-        GamePanel gamePanel = new GamePanel();
-        w.add(gamePanel);
-
-        w.pack();
-
-        w.setLocationRelativeTo(null);
-        w.setVisible(true);
-
-        gamePanel.startGameThread();
+        Mechanism ges = new Mechanism();
+        ges.polymorphize();
+        ges.intro();
+        System.out.println("Before we carry on...");
+        ges.guessMachine();
+        ges.Test();
     }
 }
