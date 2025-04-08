@@ -4,7 +4,7 @@ public class Main {
         JFrame w = new JFrame();
         w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         w.setResizable(false);
-        w.setTitle("Escape: Level Zero");
+        w.setTitle("Escape: Level Zero (Kind of Unfinished");
 
         GamePanel gamePanel = new GamePanel();
         w.add(gamePanel);
