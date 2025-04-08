@@ -16,7 +16,7 @@ public class Mechanism {
     ArrayList<JFrame> gifs = new ArrayList<>();
 
     public void polymorphize(){
-        gifs.add(0, gui0);
+        gifs.add(gui0);
     }
 
     public void intro(){
@@ -56,6 +56,12 @@ public class Mechanism {
 
     public void check(){
         System.out.println("YOU WIN");
+        ending();
     }
 
+    public void ending(){
+        Gif1 gui1 = new Gif1();
+        gui1.setVisible(true);
+        gui1.pack();
+    }
 }
